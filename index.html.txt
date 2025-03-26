@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Button Redirect</title>
+</head>
+
+<body>
+
+ <h3><p>SKY-4152-3715</p></h3>
+  
+   <button id="redirectButton">Flag</button>
+
+   <script>
+       // JavaScript to handle the button click event
+       document.getElementById('redirectButton').addEventListener('click', function() {
+           // Replace 'new_directory/index.html' with the actual path you want to redirect to
+           window.location.href = 'New%folder/new.html';
+       });
+   </script>
+
+   
+</body>
+
+</html>

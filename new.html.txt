@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Protection</title>
+  <style>
+    body {
+      background-color: gray;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+    <h1>Enter the Password</h1>
+
+    <form id="passwordForm">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('passwordForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Replace 'your_password' with the correct password
+            const correctPassword = 'SKY-4152-3715';
+            const enteredPassword = document.getElementById('password').value;
+
+            if (enteredPassword === correctPassword) {
+                // Password is correct, redirect to a new directory
+                window.location.href = 'image.html';
+            } else {
+                alert('Enter the flag');
+                // Clear the input field
+                document.getElementById('password').value = '';
+            }
+        });
+    </script>
+</body>
+</html>
